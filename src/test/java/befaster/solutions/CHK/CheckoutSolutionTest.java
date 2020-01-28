@@ -77,6 +77,12 @@ public class CheckoutSolutionTest {
 
 		assertEquals(230,checkoutSolution.checkout("AAAAA").intValue());
 	}
+@Test
+
+public void testAAAAAA() {
+
+	assertEquals(260,checkoutSolution.checkout("AAAAA").intValue());
+}
 	
 
 	/*
@@ -84,4 +90,5 @@ public class CheckoutSolutionTest {
  - {"method":"checkout","params":["AAAAA"],"id":"CHK_R1_016"}, expected: 230, got: 250
  - {"method":"checkout","params":["AAAAAA"],"id":"CHK_R1_017"}, expected: 260, got: 300*/
 }
+
 
