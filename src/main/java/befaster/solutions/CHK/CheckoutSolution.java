@@ -54,10 +54,19 @@ public class CheckoutSolution {
     			totalprice=totalprice+50*count;
     			
     		}
+    		if(value.getKey()=='B') {
+    			int count=value.getValue();
+    			while(count>=2) {
+    				
+    				totalprice=totalprice+45;
+
+    			}
+    		}
     	}
     	 return totalprice;
     	 
     }
 }
+
 
 
