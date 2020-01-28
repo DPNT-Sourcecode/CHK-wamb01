@@ -17,18 +17,21 @@ public class CheckoutSolution {
     			 {
     			 if(c=='A') countA++;
     			 if(c=='B') countB++;
+    			 if(countA==3) {
+    	    		 totalprice=totalprice+130-3*50;
+                     countA=0;
+    			 } 
+    			 if(countB==2){
+    	    		 totalprice=totalprice+45- 2*30;
+    	    		 countB=0;
+    	    	 }
     			 totalprice=totalprice+ItemPrice.itemprice.get(c);
     			 }
 
     	 }
-    	 if(countA==3) {
-    		 
-    		 totalprice=totalprice+130-3*50;
-    	 } if(countB==2){
-    		 totalprice=totalprice+45- 2*30;
-
-    	 }
+    	
     	 return totalprice;
     	 
     }
 }
+
