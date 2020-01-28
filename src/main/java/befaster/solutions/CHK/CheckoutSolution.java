@@ -19,7 +19,7 @@ public class CheckoutSolution {
     			 if(c=='B') countB++;
     			 if(countA==3) {
     	    		 totalprice=totalprice+130-3*50;
-                     countA=0;
+    	    		countA=0;
     			 } 
     			 if(countB==2){
     	    		 totalprice=totalprice+45- 2*30;
@@ -34,4 +34,5 @@ public class CheckoutSolution {
     	 
     }
 }
+
 
