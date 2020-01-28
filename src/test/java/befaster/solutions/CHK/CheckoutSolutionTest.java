@@ -73,10 +73,10 @@ public class CheckoutSolutionTest {
 		assertEquals(80,checkoutSolution.checkout("EEB").intValue());
 	}
 	@Test
-	@Ignore
+	
 	public void test2E2B() {
 
-		assertEquals(110,checkoutSolution.checkout("EEBB").intValue());
+		assertEquals(125,checkoutSolution.checkout("EEBBB").intValue());
 	}
 	
 
@@ -85,3 +85,4 @@ public class CheckoutSolutionTest {
 	
 
 }
+
