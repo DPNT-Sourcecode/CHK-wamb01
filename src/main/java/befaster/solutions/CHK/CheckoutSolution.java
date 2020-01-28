@@ -76,9 +76,12 @@ public class CheckoutSolution {
     		if(value.getKey()=='E') {
     			int count=value.getValue();
     			  if(count>=2 && itemCount.containsKey('B')) {
-    				    if(count/itemCount.get('B')==0) {
-    	    			totalprice=totalprice+40*count-45+30;
-    				    }else {
+    				    if(itemCount.get('B')%2==0) {
+    	    			totalprice=totalprice+40*count-45;
+    				    }else if(itemCount.get('B')%2!=0){
+    				    	
+    				    }
+    				    else {
         	    			totalprice=totalprice+40*count-30;
 
     				    }
@@ -98,6 +101,7 @@ public class CheckoutSolution {
     	 
     }
 }
+
 
 
 
