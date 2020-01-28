@@ -4,7 +4,7 @@ import java.util.TreeMap;
 
 public class ItemPrice {
 
-	public static TreeMap<String, Integer> itemprice=new TreeMap<String, Integer>();
+	public static TreeMap<Character, Integer> itemprice=new TreeMap<String, Integer>();
 	static {
 		
 		itemprice.put("A", 50);
@@ -15,4 +15,5 @@ public class ItemPrice {
 
 	}
 }
+
 

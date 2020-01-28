@@ -15,7 +15,8 @@ public class CheckoutSolutionTest {
 	@Test
 	public void test() {
 
-		checkoutSolution.checkout("A");
+		assertEquals(1,checkoutSolution.checkout("A").intValue());
 	}
 
 }
+

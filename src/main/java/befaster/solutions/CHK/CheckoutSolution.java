@@ -5,10 +5,20 @@ import befaster.runner.SolutionNotImplementedException;
 public class CheckoutSolution {
     public Integer checkout(String skus) {
     	
-    	if(!ItemPrice.itemprice.containsKey(skus))
-    		return -1;
+    	 char[] items=skus.toCharArray();
+    	 int count=0;
+    	 for(char c:items) {
+    		 
+    		 if(!ItemPrice.itemprice.containsKey(c))
+    	    		return -1;
+    		 else
+    			 count++;
+
+    	 }
+    	 return count;
     	 
     }
 }
+
 
 
