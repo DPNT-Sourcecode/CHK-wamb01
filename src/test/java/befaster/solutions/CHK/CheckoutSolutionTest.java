@@ -17,6 +17,18 @@ public class CheckoutSolutionTest {
 
 		assertEquals(1,checkoutSolution.checkout("A").intValue());
 	}
+	
+	@Test
+	public void test1() {
+
+		assertEquals(-1,checkoutSolution.checkout("P").intValue());
+	}
+	@Test
+	public void test2() {
+
+		assertEquals(2,checkoutSolution.checkout("AB").intValue());
+	}
 
 }
+
 
