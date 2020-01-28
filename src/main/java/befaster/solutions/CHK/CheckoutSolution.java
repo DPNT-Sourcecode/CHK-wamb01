@@ -1,7 +1,5 @@
 package befaster.solutions.CHK;
 
-import befaster.runner.SolutionNotImplementedException;
-
 public class CheckoutSolution {
     public Integer checkout(String skus) {
     	
@@ -9,8 +7,6 @@ public class CheckoutSolution {
     	 int totalprice=0;
     	 
     	 int countA=0;
-    	 int countAA=0;
-    	 int tempprize=0;
 
     	 int countB=0;
     	 int countE=0;
@@ -20,7 +16,7 @@ public class CheckoutSolution {
     	    		return -1;
     		 else
     			 {
-    			 if(c=='A') {countA++;countAA++; };
+    			 if(c=='A') {countA++;};
     			 if(c=='B') countB++;
     			 if(c=='E') countE++;
 
@@ -28,11 +24,7 @@ public class CheckoutSolution {
     	    		 totalprice=totalprice+130-3*50;
     	    		countA=0;
     			 } 
-    			 if(countAA==5) {
-    				 
-    	    		 totalprice=totalprice+200-130-2*50;
-    	    		 countAA=0;
-    			 }
+    			 
     			 if(countB==2){
     	    		 totalprice=totalprice+45- 2*30;
     	    		 countB=0;
@@ -50,5 +42,6 @@ public class CheckoutSolution {
     	 
     }
 }
+
 
 
