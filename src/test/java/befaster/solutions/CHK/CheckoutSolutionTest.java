@@ -84,6 +84,19 @@ public class CheckoutSolutionTest {
 
 		assertEquals(160,checkoutSolution.checkout("EEEEBB").intValue());
 	}
+@Test
+
+public void testBEBEEE() {
+
+	assertEquals(160,checkoutSolution.checkout("BEBEEE").intValue());
+}
+
+@Test
+
+public void testABCDEABCDE() {
+
+	assertEquals(280,checkoutSolution.checkout("ABCDEABCDE").intValue());
+}
 	
 	/* {"method":"checkout","params":["EEEEBB"],"id":"CHK_R2_026"}, expected: 160, got: 175
 	 - {"method":"checkout","params":["BEBEEE"],"id":"CHK_R2_027"}, expected: 160, got: 175
@@ -93,5 +106,6 @@ public class CheckoutSolutionTest {
 	
 
 }
+
 
 
