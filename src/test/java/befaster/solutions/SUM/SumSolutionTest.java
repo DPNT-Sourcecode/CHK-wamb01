@@ -16,13 +16,15 @@ public class SumSolutionTest {
     }
 
     @Test
-    public void compute_sum() {
+    public void compute_sum() throws Exception {
         assertThat(sum.compute(1, 1), equalTo(2));
     }
     
     @Test
-    public void compute_sum_WithNegativeValues() {
-        assertThat(sum.compute(-1, -1), equalTo(-2));
+    (expected = Exception.class)
+    public void compute_sum_WithNegativeValues() throws Exception {
+        assertThat(sum.compute(-1, -1));
     }
 }
+
 
