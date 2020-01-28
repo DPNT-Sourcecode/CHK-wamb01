@@ -21,7 +21,7 @@ public class CheckoutSolution {
     			 }
 
     	 }
-    	 if(countA==3) {
+    	 if(countA%3==0) {
     		 
     		 totalprice=totalprice+130-3*50;
     	 } if(countB==2){
@@ -32,6 +32,7 @@ public class CheckoutSolution {
     	 
     }
 }
+
 
 
 
