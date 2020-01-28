@@ -44,9 +44,11 @@ public class CheckoutSolutionTest {
 
 		assertEquals(115,checkoutSolution.checkout("ABCD").intValue());
 	}
+	
+	@Test
+	public void testAAA() {
+
+		assertEquals(130,checkoutSolution.checkout("AAA").intValue());
+	}
 
 }
-
-
-
-

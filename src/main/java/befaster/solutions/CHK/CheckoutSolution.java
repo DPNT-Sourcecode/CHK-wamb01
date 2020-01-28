@@ -7,6 +7,8 @@ public class CheckoutSolution {
     	
     	 char[] items=skus.toCharArray();
     	 int totalprice=0;
+    	 int countA;
+    	 int countB;
     	 for(char c:items) {
     		 
     		 if(!ItemPrice.itemprice.containsKey(c))
@@ -19,7 +21,3 @@ public class CheckoutSolution {
     	 
     }
 }
-
-
-
-
