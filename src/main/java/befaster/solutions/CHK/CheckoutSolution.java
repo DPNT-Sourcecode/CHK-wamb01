@@ -14,7 +14,7 @@ public class CheckoutSolution {
     	 int countB=0;
     	 int countE=0;
      Map<Character, Integer> itemsandCount =new HashMap<Character, Integer>();
-for(char c:items) {
+     for(char c:items) {
     		 
     		 if(!ItemPrice.itemprice.containsKey(c))
     	    		return -1;
@@ -54,8 +54,9 @@ for(char c:items) {
     	
     	 return totalprice;
     	 
-    }
 }
+    }}
+
 
 
 
