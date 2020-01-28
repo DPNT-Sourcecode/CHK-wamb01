@@ -8,7 +8,7 @@ public class CheckoutSolution {
     	
     	 char[] items=skus.toCharArray();
     	 int totalprice = 0;
-    	 
+    	 int countB=0;
     	 
     	 Map<Character, Integer> itemCount=new HashMap<Character, Integer>();
     	 
@@ -55,14 +55,14 @@ public class CheckoutSolution {
     			
     		}
     		if(value.getKey()=='B') {
-    			int count=value.getValue();
-    			while(count>=2) {
+    			 countB=value.getValue();
+    			while(countB>=2) {
     				
     				totalprice=totalprice+45;
-    				count=count-2;
+    				countB=countB-2;
 
     			}
-    			totalprice=totalprice+30*count;
+    			totalprice=totalprice+30*countB;
 
     		}
     		if(value.getKey()=='C') {
@@ -75,13 +75,23 @@ public class CheckoutSolution {
     		}
     		if(value.getKey()=='E') {
     			int count=value.getValue();
-    			  if(count>=2 && itemCount.containsKey('B')) {
+    			while(count>=2) {
+    			  if(count>=2 && itemCount.containsKey('B') ) {
+    				    
+    				  if(countB==2) {
+      	    			totalprice=totalprice+40*count-45;
+    	    			count=count-2;
+
+    				  }else {
     	    			totalprice=totalprice+40*count-30;
     	    			count=count-2;
-    			  }else {
+
+    				  }
+    			  }}
+    			
   	    			totalprice=totalprice+40*count;
 
-    			  }
+    			  
 
     		}
     	}
@@ -89,3 +99,4 @@ public class CheckoutSolution {
     	 
     }
 }
+
