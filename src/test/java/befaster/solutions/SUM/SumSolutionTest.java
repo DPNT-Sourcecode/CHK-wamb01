@@ -20,12 +20,5 @@ public class SumSolutionTest {
         assertThat(sum.compute(1, 1), equalTo(2));
     }
     
-    @Test
-    (expected = Exception.class)
-    public void compute_sum_WithNegativeValues() throws Exception {
-        sum.compute(-1, -1);
-    }
+	
 }
-
-
-

@@ -41,7 +41,7 @@ class EntryPointMapping {
         checkliteSolution = new CheckliteSolution();
     }
 
-    Object sum(List<JsonElement> p) throws Exception{
+    Object sum(List<JsonElement> p) {
         return sumSolution.compute(p.get(0).getAsInt(), p.get(1).getAsInt());
     }
 
@@ -73,4 +73,3 @@ class EntryPointMapping {
         return checkliteSolution.checklite(p.get(0).getAsString());
     }
 }
-
