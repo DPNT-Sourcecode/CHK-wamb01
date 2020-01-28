@@ -10,11 +10,12 @@ public class ItemPrice {
 		itemprice.put('A', 50);
 		itemprice.put('B', 30);
 		itemprice.put('C', 20);
-		itemprice.put('C', 15);
+		itemprice.put('D', 15);
 
 
 	}
 }
+
 
 
 
