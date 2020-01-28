@@ -18,6 +18,8 @@ public class CheckoutSolution {
     			 {
     			 if(c=='A') countA++;
     			 if(c=='B') countB++;
+    			 if(c=='E') countE++;
+
     			 if(countA==3) {
     	    		 totalprice=totalprice+130-3*50;
     	    		countA=0;
@@ -28,6 +30,7 @@ public class CheckoutSolution {
     	    	 }
     			 if(countE==2) {
     				 totalprice=totalprice-ItemPrice.itemprice.get('B');
+    				 countE=0;
     			 }
     			 totalprice=totalprice+ItemPrice.itemprice.get(c);
     			 }
@@ -38,6 +41,7 @@ public class CheckoutSolution {
     	 
     }
 }
+
 
 
 
