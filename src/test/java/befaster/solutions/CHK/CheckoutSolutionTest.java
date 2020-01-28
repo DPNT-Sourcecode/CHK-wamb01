@@ -95,6 +95,12 @@ public void testBEBEEE() {
 
 public void testABCDEABCDE() {
 
+	// 2A=100  
+	//2B=45
+	//C2=20*2=40
+	//2D=15*2=30
+	//2E=40*2=80
+	
 	assertEquals(280,checkoutSolution.checkout("ABCDEABCDE").intValue());
 }
 	
@@ -106,6 +112,7 @@ public void testABCDEABCDE() {
 	
 
 }
+
 
 
 
