@@ -89,11 +89,3 @@ public class CheckoutSolution {
     	 
     }
 }
-
-
-
-
-
-
-
-
