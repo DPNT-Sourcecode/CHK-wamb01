@@ -44,16 +44,19 @@ public class CheckoutSolution {
     		if(value.getKey()=='A') {
     			
     			int count=value.getValue();
+    			
     			if(count>=5) {
     				totalprice=totalprice+200;
     				count=count-5;
     			}
+    			
     		}
     	}
     	 return totalprice;
     	 
     }
 }
+
 
 
 
