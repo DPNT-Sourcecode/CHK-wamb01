@@ -65,11 +65,20 @@ public class CheckoutSolution {
     			totalprice=totalprice+30*count;
 
     		}
+    		if(value.getKey()=='C') {
+    			totalprice=totalprice+20*value.getValue();
+
+    		}
+    		if(value.getKey()=='D') {
+    			totalprice=totalprice+15*value.getValue();
+
+    		}
     	}
     	 return totalprice;
     	 
     }
 }
+
 
 
 
