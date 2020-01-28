@@ -8,6 +8,8 @@ public class CheckoutSolution {
     	 char[] items=skus.toCharArray();
     	 int totalprice=0;
     	 int countA=0;
+    	 int countAA=0;
+
     	 int countB=0;
     	 int countE=0;
     	 for(char c:items) {
@@ -16,11 +18,11 @@ public class CheckoutSolution {
     	    		return -1;
     		 else
     			 {
-    			 if(c=='A') countA++;
+    			 if(c=='A') {countA++,countAA++ };
     			 if(c=='B') countB++;
     			 if(c=='E') countE++;
 
-    			 if(countA==3) {
+    			 if(countA==3 ) {
     	    		 totalprice=totalprice+130-3*50;
     	    		countA=0;
     			 } 
@@ -41,7 +43,3 @@ public class CheckoutSolution {
     	 
     }
 }
-
-
-
-
