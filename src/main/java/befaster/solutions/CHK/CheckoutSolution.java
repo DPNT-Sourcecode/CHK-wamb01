@@ -9,6 +9,7 @@ public class CheckoutSolution {
     	 int totalprice=0;
     	 int countA=0;
     	 int countB=0;
+    	 int countE=0;
     	 for(char c:items) {
     		 
     		 if(!ItemPrice.itemprice.containsKey(c))
@@ -25,6 +26,9 @@ public class CheckoutSolution {
     	    		 totalprice=totalprice+45- 2*30;
     	    		 countB=0;
     	    	 }
+    			 if(countE==2) {
+    				 totalprice=totalprice-ItemPrice.itemprice.get('B');
+    			 }
     			 totalprice=totalprice+ItemPrice.itemprice.get(c);
     			 }
 
@@ -34,5 +38,6 @@ public class CheckoutSolution {
     	 
     }
 }
+
 
 

@@ -11,7 +11,9 @@ public class ItemPrice {
 		itemprice.put('B', 30);
 		itemprice.put('C', 20);
 		itemprice.put('D', 15);
+		itemprice.put('E', 40);
 
 
 	}
 }
+
