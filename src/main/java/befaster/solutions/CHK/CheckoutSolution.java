@@ -22,14 +22,16 @@ public class CheckoutSolution {
 
     	 }
     	 if(countA==3) {
-    		 totalprice=totalprice-20;
+    		 
+    		 totalprice=totalprice+130-3*50;
     	 } if(countB==2){
-    		 totalprice=totalprice-15;
+    		 totalprice=totalprice+45- 2*30;
 
     	 }
     	 return totalprice;
     	 
     }
 }
+
 
 
