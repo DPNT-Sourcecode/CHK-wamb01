@@ -23,8 +23,9 @@ public class SumSolutionTest {
     @Test
     (expected = Exception.class)
     public void compute_sum_WithNegativeValues() throws Exception {
-        assertThat(sum.compute(-1, -1));
+        sum.compute(-1, -1);
     }
 }
+
 
 
