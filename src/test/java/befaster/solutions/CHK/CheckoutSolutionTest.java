@@ -60,75 +60,26 @@ public class CheckoutSolutionTest {
 
 		assertEquals(15,checkoutSolution.checkout("D").intValue());
 	}
-	/*
-	 * @Test public void testC() {
-	 * 
-	 * assertEquals(20,checkoutSolution.checkout("C").intValue()); }
-	 * 
-	 * @Test public void testD() {
-	 * 
-	 * assertEquals(15,checkoutSolution.checkout("D").intValue()); }
-	 * 
-	 * @Test public void testP() {
-	 * 
-	 * assertEquals(-1,checkoutSolution.checkout("P").intValue()); }
-	 * 
-	 * @Test public void testAB() {
-	 * 
-	 * assertEquals(80,checkoutSolution.checkout("AB").intValue()); }
-	 * 
-	 * @Test public void testABCD() {
-	 * 
-	 * assertEquals(115,checkoutSolution.checkout("ABCD").intValue()); }
-	 * 
-	 * @Test public void testAAA() {
-	 * 
-	 * assertEquals(130,checkoutSolution.checkout("AAA").intValue()); }
-	 * 
-	 * @Test public void testBB() {
-	 * 
-	 * assertEquals(45,checkoutSolution.checkout("BB").intValue()); }
-	 * 
-	 * @Test public void testAAABB() {
-	 * 
-	 * assertEquals(175,checkoutSolution.checkout("AAABB").intValue()); }
-	 * 
-	 * @Test
-	 * 
-	 * public void testAAAA() {
-	 * 
-	 * assertEquals(180,checkoutSolution.checkout("AAAA").intValue()); }
-	 * 
-	 * @Test
-	 * 
-	 * public void testAAAAA() {
-	 * 
-	 * assertEquals(200,checkoutSolution.checkout("AAAAA").intValue()); }
-	 * 
-	 * @Test
-	 * 
-	 * @Ignore public void testAAAAAA() {
-	 * 
-	 * assertEquals(260,checkoutSolution.checkout("AAAAAA").intValue()); }
-	 * 
-	 * @Test
-	 * 
-	 * public void testE() {
-	 * 
-	 * assertEquals(40,checkoutSolution.checkout("E").intValue()); }
-	 * 
-	 * @Test
-	 * 
-	 * public void testEEB() {
-	 * 
-	 * assertEquals(80,checkoutSolution.checkout("EEB").intValue()); }
-	 */
+	
+	@Test
+	public void testE() {
+
+		assertEquals(40,checkoutSolution.checkout("E").intValue());
+	}
+	
+	@Test
+	public void test2EB() {
+
+		assertEquals(80,checkoutSolution.checkout("EEB").intValue());
+	}
+	
 
 
 
 	
 
 }
+
 
 
 

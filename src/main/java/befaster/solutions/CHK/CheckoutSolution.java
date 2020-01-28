@@ -73,11 +73,17 @@ public class CheckoutSolution {
     			totalprice=totalprice+15*value.getValue();
 
     		}
+    		if(value.getKey()=='E') {
+    			int count=value.getValue();
+    			totalprice=totalprice+40*count;
+
+    		}
     	}
     	 return totalprice;
     	 
     }
 }
+
 
 
 
