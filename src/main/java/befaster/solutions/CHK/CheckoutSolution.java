@@ -7,12 +7,9 @@ public class CheckoutSolution {
     public Integer checkout(String skus) {
     	
     	 char[] items=skus.toCharArray();
-    	 int totalprice=0;
+    	 int totalprice = 0;
     	 
-    	 int countA=0;
-
-    	 int countB=0;
-    	 int countE=0;
+    	 
     	 Map<Character, Integer> itemCount=new HashMap<Character, Integer>();
     	 
     	 for(char c:items) {
@@ -44,18 +41,26 @@ public class CheckoutSolution {
     		if(value.getKey()=='A') {
     			
     			int count=value.getValue();
-    			
+    			while(count>0) {
     			if(count>=5) {
     				totalprice=totalprice+200;
     				count=count-5;
     			}
-    			
+    			else if(count>=3) {
+    				totalprice=totalprice+130;
+    				count=count-3;
+    			}
+    			else {
+    				totalprice=totalprice+count*50;
+    			}
+    			}
     		}
     	}
     	 return totalprice;
     	 
     }
 }
+
 
 
 
