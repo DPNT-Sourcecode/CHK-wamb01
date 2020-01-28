@@ -19,7 +19,8 @@ public class HelloSolutionTest {
 		assertEquals("Not Matched", "Hello, World!", helloSolution.hello("Praveen"));
 	}
 	public void test2() {
-		assertEquals("Not Matched", "Hello , Praveen!", helloSolution.hello("Praveen"));
+		assertEquals("Not Matched", "Hello, Craftsman!", helloSolution.hello("Craftsman"));
 	}
 
 }
+
