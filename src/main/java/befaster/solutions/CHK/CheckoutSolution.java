@@ -41,7 +41,7 @@ public class CheckoutSolution {
     		if(value.getKey()=='A') {
     			
     			int count=value.getValue();
-    			while(count>3) {
+    			while(count>=3) {
     			if(count>=5) {
     				totalprice=totalprice+200;
     				count=count-5;
@@ -59,3 +59,4 @@ public class CheckoutSolution {
     	 
     }
 }
+
