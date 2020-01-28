@@ -13,16 +13,15 @@ public class CheckoutSolution {
 
     	 int countB=0;
     	 int countE=0;
-     Map itemsandCount =new HashMap<Character, Integer>();
+     Map<Character, Integer> itemsandCount =new HashMap<Character, Integer>();
 for(char c:items) {
     		 
     		 if(!ItemPrice.itemprice.containsKey(c))
     	    		return -1;
     		 else
     			 {
-    			 
-    			 
-    			 itemsandCount.put(c, 1);
+    			 if(itemsandCount.containsKey(c))
+    			 itemsandCount.put(c, itemsandCount.get(c)+1);
     			 }
     			 /*if(c=='A') {countA++;};
     			 if(c=='B') countB++;
@@ -50,6 +49,7 @@ for(char c:items) {
     	 
     }
 }
+
 
 
 
