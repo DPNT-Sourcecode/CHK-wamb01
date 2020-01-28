@@ -39,6 +39,16 @@ public class CheckoutSolutionTest {
 
 		assertEquals(250,checkoutSolution.checkout("AAAAAA").intValue());
 	}
+	@Test
+	public void testB() {
+
+		assertEquals(30,checkoutSolution.checkout("B").intValue());
+	}
+	@Test
+	public void test2B() {
+
+		assertEquals(45,checkoutSolution.checkout("BB").intValue());
+	}
 	/*
 	 * @Test public void testC() {
 	 * 
@@ -108,6 +118,7 @@ public class CheckoutSolutionTest {
 	
 
 }
+
 
 
 

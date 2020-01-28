@@ -59,14 +59,18 @@ public class CheckoutSolution {
     			while(count>=2) {
     				
     				totalprice=totalprice+45;
+    				count=count-2;
 
     			}
+    			totalprice=totalprice+30*count;
+
     		}
     	}
     	 return totalprice;
     	 
     }
 }
+
 
 
 
