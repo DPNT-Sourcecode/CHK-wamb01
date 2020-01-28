@@ -104,15 +104,8 @@ public void testABCDEABCDE() {
 	assertEquals(280,checkoutSolution.checkout("ABCDEABCDE").intValue());
 }
 	
-	/* {"method":"checkout","params":["EEEEBB"],"id":"CHK_R2_026"}, expected: 160, got: 175
-	 - {"method":"checkout","params":["BEBEEE"],"id":"CHK_R2_027"}, expected: 160, got: 175
-	 - {"method":"checkout","params":["ABCDEABCDE"],"id":"CHK_R2_038"}, expected: 280, got: 265
-*/
+	
 
 	
 
 }
-
-
-
-
