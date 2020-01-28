@@ -96,7 +96,7 @@ public void testBEBEEE() {
 public void testABCDEABCDE() {
 
 	// 2A=100  
-	//2B=45
+	//2B=45 -15=30
 	//C2=20*2=40
 	//2D=15*2=30
 	//2E=40*2=80
@@ -109,4 +109,5 @@ public void testABCDEABCDE() {
 	
 
 }
+
 
