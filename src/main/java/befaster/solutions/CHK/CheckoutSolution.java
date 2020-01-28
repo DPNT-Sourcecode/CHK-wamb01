@@ -18,7 +18,7 @@ public class CheckoutSolution {
     	    		return -1;
     		 else
     			 {
-    			 if(c=='A') {countA++,countAA++ };
+    			 if(c=='A') {countA++;countAA++; };
     			 if(c=='B') countB++;
     			 if(c=='E') countE++;
 
@@ -26,6 +26,11 @@ public class CheckoutSolution {
     	    		 totalprice=totalprice+130-3*50;
     	    		countA=0;
     			 } 
+    			 if(countAA==5) {
+    				 
+    	    		 totalprice=totalprice+200-5*50;
+    	    		 countAA=0;
+    			 }
     			 if(countB==2){
     	    		 totalprice=totalprice+45- 2*30;
     	    		 countB=0;
@@ -43,3 +48,4 @@ public class CheckoutSolution {
     	 
     }
 }
+
