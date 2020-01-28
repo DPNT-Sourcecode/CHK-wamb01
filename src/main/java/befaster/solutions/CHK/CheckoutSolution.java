@@ -19,6 +19,15 @@ public class CheckoutSolution {
     		 
     		 if(!ItemPrice.itemprice.containsKey(c))
     	    		return -1;
+    		 else {
+    			 if(itemCount.containsKey(c)) {
+          			  itemCount.put(c,itemCount.get(c));
+
+    			 }else {
+       			  itemCount.put(c,1);
+ 
+    			 }
+    		 }
 			/*
 			 * else { if(c=='A') countA++; if(c=='B') countB++; if(c=='E') countE++;
 			 * 
@@ -30,9 +39,15 @@ public class CheckoutSolution {
 			 */
 
     	 }
-    	
+    	for(Map.Entry<Character, Integer> value:itemCount.entrySet()) {
+    		
+    		if(value.getKey()=='A') {
+    			
+    		}
+    	}
     	 return totalprice;
     	 
     }
 }
+
 
