@@ -18,7 +18,7 @@ public class CheckoutSolution {
     	    		return -1;
     		 else {
     			 if(itemCount.containsKey(c)) {
-          			  itemCount.put(c,itemCount.get(c));
+          			  itemCount.put(c,itemCount.get(c)+1);
 
     			 }else {
        			  itemCount.put(c,1);
@@ -59,4 +59,5 @@ public class CheckoutSolution {
     	 
     }
 }
+
 
