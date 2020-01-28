@@ -20,8 +20,11 @@ for(char c:items) {
     	    		return -1;
     		 else
     			 {
-    			 if(itemsandCount.containsKey(c))
+    			 if(itemsandCount.containsKey(c)) {
     			 itemsandCount.put(c, itemsandCount.get(c)+1);
+    			 }else {
+        			 itemsandCount.put(c, 1);
+ 
     			 }
     			 /*if(c=='A') {countA++;};
     			 if(c=='B') countB++;
@@ -45,10 +48,15 @@ for(char c:items) {
 
     	 }
     	
+    		 for(Map.Entry<Character, Integer> val: itemsandCount.entrySet())	 {
+    			 
+    		 }
+    	
     	 return totalprice;
     	 
     }
 }
+
 
 
 
