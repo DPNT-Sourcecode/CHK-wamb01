@@ -92,7 +92,6 @@ public void testBEBEEE() {
 }
 
 @Test
-@Ignore
 public void testABCDEABCDE() {
 
 	// 2A=100  
@@ -109,6 +108,7 @@ public void testABCDEABCDE() {
 	
 
 }
+
 
 
 
