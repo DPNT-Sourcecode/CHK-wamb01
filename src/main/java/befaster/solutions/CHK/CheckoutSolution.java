@@ -227,34 +227,6 @@ public class CheckoutSolution {
     }
     if(value.getKey()=='S') {
     	int count=value.getValue();
-    	//(S,T,X,Y,Z) 
-    	if(itemCount.containsKey('N')) {
-    		count=count+itemCount.get('N');
-    	}
-    	if(itemCount.containsKey('T')) {
-    		count=count+itemCount.get('T');
-    	}
-    	if(itemCount.containsKey('X')) {
-    		count=count+itemCount.get('X');
-    	}
-    	if(itemCount.containsKey('Y')) {
-    		count=count+itemCount.get('Y');
-    	}
-    	if(itemCount.containsKey('Z')) {
-    		count=count+itemCount.get('Z');
-    	}
-    	if(count>=3) {
-			int reminder=count%3;
-			int quotient=count/3;
-			if(reminder==0) {
-      			 totalprice=totalprice+quotient*45;
-                 count=count-3*quotient;
-			}else {
-				
-      			 totalprice=totalprice+quotient*45;
-      			count=reminder;
-			}
-		}
     	totalprice=totalprice+count*ItemPrice.itemprice.get('S'); 
     }
     if(value.getKey()=='T') {
@@ -327,6 +299,7 @@ public class CheckoutSolution {
     	 
     }
 }
+
 
 
 
