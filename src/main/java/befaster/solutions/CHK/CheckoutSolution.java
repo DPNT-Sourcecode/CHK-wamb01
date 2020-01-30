@@ -243,6 +243,18 @@ public class CheckoutSolution {
     	if(itemCount.containsKey('Z')) {
     		count=count+itemCount.get('Z');
     	}
+    	if(count>=3) {
+			int reminder=count%3;
+			int quotient=count/3;
+			if(reminder==0) {
+      			 totalprice=totalprice+quotient*45;
+                 count=count-3;
+			}else {
+				
+      			 totalprice=totalprice+quotient*45;
+      			count=reminder;
+			}
+		}
     	totalprice=totalprice+count*ItemPrice.itemprice.get('S'); 
     }
     if(value.getKey()=='T') {
@@ -315,6 +327,7 @@ public class CheckoutSolution {
     	 
     }
 }
+
 
 
 
