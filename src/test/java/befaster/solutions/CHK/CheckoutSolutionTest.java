@@ -429,6 +429,13 @@ public void testQQQQQQ() {
 	
 	assertEquals(160,checkoutSolution.checkout("QQQQQQ").intValue());
 }
+//S,T,X,Y,Z
+@Test
+public void testSTX() {
+	
+	assertEquals(45,checkoutSolution.checkout("STX").intValue());
+}
 
 }
+
 

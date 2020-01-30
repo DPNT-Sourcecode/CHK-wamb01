@@ -226,6 +226,7 @@ public class CheckoutSolution {
     	totalprice=totalprice+value.getValue()*ItemPrice.itemprice.get('R'); 
     }
     if(value.getKey()=='S') {
+    	int countS=value.getValue();
     	totalprice=totalprice+value.getValue()*ItemPrice.itemprice.get('S'); 
     }
     if(value.getKey()=='T') {
@@ -298,5 +299,6 @@ public class CheckoutSolution {
     	 
     }
 }
+
 
 
