@@ -248,7 +248,7 @@ public class CheckoutSolution {
 			int quotient=count/3;
 			if(reminder==0) {
       			 totalprice=totalprice+quotient*45;
-                 count=count-3;
+                 count=count-3*quotient;
 			}else {
 				
       			 totalprice=totalprice+quotient*45;
@@ -327,6 +327,7 @@ public class CheckoutSolution {
     	 
     }
 }
+
 
 
 
