@@ -225,7 +225,8 @@ public class CheckoutSolution {
     if(value.getKey()=='R') {
     	totalprice=totalprice+value.getValue()*ItemPrice.itemprice.get('R'); 
     }
-    if(value.getKey()=='S') {
+    //(S,T,X,Y,Z)
+    if(value.getKey()=='S' || value.getKey()=='T'|| value.getKey()=='X' || value.getKey()=='Y' || value.getKey()=='Z' ) {
     	int count=value.getValue();
     	totalprice=totalprice+count*ItemPrice.itemprice.get('S'); 
     }
@@ -299,10 +300,3 @@ public class CheckoutSolution {
     	 
     }
 }
-
-
-
-
-
-
-
