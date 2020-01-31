@@ -340,11 +340,14 @@ public class CheckoutSolution {
         }
         if(flag) {
         	// Assuming in remaining combination customer have to pay lowest cost of product 
+        	if(countSTXYZ==1) {
         	totalprice=totalprice+countSTXYZ*ItemPrice.itemprice.get('Y');
+        	}else {
+            	totalprice=totalprice+ItemPrice.itemprice.get('Y')+17;
+
+        	}
         }
     	 return totalprice;
     	 
     }
 }
-
-
