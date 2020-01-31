@@ -340,6 +340,10 @@ public class CheckoutSolution {
         }
         if(flag) {
         	// Assuming in remaining combination customer have to pay lowest cost of product 
+        	if( countSTXYZ==1 && countS==3 || countZ==3 ) {
+            	totalprice=totalprice+ItemPrice.itemprice.get('Y');
+
+        	}
         	if(countSTXYZ==1) {
         	totalprice=totalprice+ItemPrice.itemprice.get('X');
 
@@ -352,5 +356,6 @@ public class CheckoutSolution {
     	 
     }
 }
+
 
 
