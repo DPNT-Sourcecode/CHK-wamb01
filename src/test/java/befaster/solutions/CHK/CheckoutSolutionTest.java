@@ -347,12 +347,12 @@ public void test3RQQ() {
 @Test
 public void testS() {
 	
-	assertEquals(30,checkoutSolution.checkout("S").intValue());
+	assertEquals(20,checkoutSolution.checkout("S").intValue());
 }
 @Test
 public void test3RQQS() {
 	
-	assertEquals(210,checkoutSolution.checkout("RRRQQS").intValue());
+	assertEquals(200,checkoutSolution.checkout("RRRQQS").intValue());
 }
 @Test
 public void testT() {
@@ -397,17 +397,17 @@ public void testW() {
 @Test
 public void testX() {
 	
-	assertEquals(90,checkoutSolution.checkout("X").intValue());
+	assertEquals(17,checkoutSolution.checkout("X").intValue());
 }
 @Test
 public void testY() {
 	
-	assertEquals(10,checkoutSolution.checkout("Y").intValue());
+	assertEquals(20,checkoutSolution.checkout("Y").intValue());
 }
 @Test
 public void testZ() {
 	
-	assertEquals(50,checkoutSolution.checkout("Z").intValue());
+	assertEquals(21,checkoutSolution.checkout("Z").intValue());
 }
 @Test
 public void testPPPPPPPPPP() {
@@ -431,10 +431,17 @@ public void testQQQQQQ() {
 }
 //S,T,X,Y,Z
 @Test
-@Ignore
-public void testSTX() {
+
+public void testST() {
 	
-	assertEquals(45,checkoutSolution.checkout("STX").intValue());
+	assertEquals(40,checkoutSolution.checkout("ST").intValue());
+}
+
+@Test
+
+public void testSTXX() {
+	
+	assertEquals(62,checkoutSolution.checkout("STXX").intValue());
 }
 
 }

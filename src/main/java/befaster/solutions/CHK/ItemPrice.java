@@ -25,14 +25,14 @@ public class ItemPrice {
 		itemprice.put('P', 50);
 		itemprice.put('Q', 30);
 		itemprice.put('R', 50);
-		itemprice.put('S', 30);
+		itemprice.put('S', 20);
 		itemprice.put('T', 20);
 		itemprice.put('U', 40);
 		itemprice.put('V', 50);
 		itemprice.put('W', 20);
-		itemprice.put('X', 90);
-		itemprice.put('Y', 10);
-		itemprice.put('Z', 50);
+		itemprice.put('X', 17);
+		itemprice.put('Y', 20);
+		itemprice.put('Z', 21);
 
 		
 
