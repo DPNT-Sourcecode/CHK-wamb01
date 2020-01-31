@@ -455,5 +455,11 @@ public void testCXYZYZC() {
 	assertEquals(122,checkoutSolution.checkout("CXYZYZC").intValue());
 }
 
+@Test
+public void testSTXS() {
+	assertEquals(62,checkoutSolution.checkout("STXS").intValue());
 
 }
+
+}
+
