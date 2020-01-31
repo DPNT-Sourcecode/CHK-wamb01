@@ -151,7 +151,7 @@ public class CheckoutSolution {
     			while(count>=2) {
     				int reminder=count%2;
     				int quotient=count/2;
-    				totalprice=totalprice+150*quotient;
+    				totalprice=totalprice+120*quotient;
     				count=reminder;
 
     			}
@@ -346,3 +346,4 @@ public class CheckoutSolution {
     	 
     }
 }
+

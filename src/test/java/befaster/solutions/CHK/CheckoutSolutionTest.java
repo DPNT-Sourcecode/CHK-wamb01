@@ -236,19 +236,19 @@ public void testK() {
 public void test2K() {
 
 	
-	assertEquals(150,checkoutSolution.checkout("KK").intValue());
+	assertEquals(120,checkoutSolution.checkout("KK").intValue());
 }
 @Test
 public void test4K() {
 
 	
-	assertEquals(300,checkoutSolution.checkout("KKKK").intValue());
+	assertEquals(240,checkoutSolution.checkout("KKKK").intValue());
 }
 @Test
 public void test5K() {
 
 	
-	assertEquals(380,checkoutSolution.checkout("KKKKK").intValue());
+	assertEquals(310,checkoutSolution.checkout("KKKKK").intValue());
 }
 @Test
 public void testL() {
@@ -445,4 +445,5 @@ public void testSTXX() {
 }
 
 }
+
 
