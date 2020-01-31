@@ -460,11 +460,14 @@ public void testSTXS() {
 	assertEquals(62,checkoutSolution.checkout("STXS").intValue());
 
 }
-/*
-{"method":"checkout","params":["SSSZ"],"id":"CHK_R5_142"}, expected: 65, got: 62
-- {"method":"checkout","params":["ZZZS"],"id":"CHK_R5_144"}, expected: 65, got: 62
-*/
+@Test
+public void testZZZS() {
+	assertEquals(65,checkoutSolution.checkout("ZZZS").intValue());
+
 }
+
+}
+
 
 
 
