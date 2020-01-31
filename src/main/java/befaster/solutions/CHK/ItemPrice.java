@@ -17,7 +17,7 @@ public class ItemPrice {
 		itemprice.put('H', 10);
 		itemprice.put('I', 35);
 		itemprice.put('J', 60);
-		itemprice.put('K', 80);
+		itemprice.put('K', 70);
 		itemprice.put('L', 90);
 		itemprice.put('M', 15);
 		itemprice.put('N', 40);
@@ -39,3 +39,4 @@ public class ItemPrice {
 
 	}
 }
+

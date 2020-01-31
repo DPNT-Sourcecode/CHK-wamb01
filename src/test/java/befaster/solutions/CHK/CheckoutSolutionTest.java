@@ -230,7 +230,7 @@ public void testJ() {
 public void testK() {
 
 	
-	assertEquals(80,checkoutSolution.checkout("K").intValue());
+	assertEquals(70,checkoutSolution.checkout("K").intValue());
 }
 @Test
 public void test2K() {
@@ -445,3 +445,4 @@ public void testSTXX() {
 }
 
 }
+
