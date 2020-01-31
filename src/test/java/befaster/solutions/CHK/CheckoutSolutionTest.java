@@ -441,12 +441,12 @@ public void testST() {
 
 public void testSTXX() {
 	
-	assertEquals(65,checkoutSolution.checkout("STXX").intValue());
+	assertEquals(62,checkoutSolution.checkout("STXX").intValue());
 }
 @Test
 public void testSSSZ() {
 	
-	assertEquals(65,checkoutSolution.checkout("SSSZ").intValue());
+	assertEquals(62,checkoutSolution.checkout("SSSZ").intValue());
 }
 
 @Test
@@ -462,4 +462,5 @@ public void testSTXS() {
 }
 
 }
+
 
