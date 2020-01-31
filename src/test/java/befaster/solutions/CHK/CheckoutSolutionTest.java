@@ -458,8 +458,13 @@ public void testCXYZYZC() {
 /*{"method":"checkout","params":["SSSZ"],"id":"CHK_R5_142"}, expected: 65, got: 62
 - {"method":"checkout","params":["ZZZS"],"id":"CHK_R5_144"}, expected: 65, got: 62
 - {"method":"checkout","params":["CXYZYZC"],"id":"CHK_R5_001"}, expected: 122, got: 119
+2c=40
+XYZ=45
+122-85=37
+
 */
 }
+
 
 
 
